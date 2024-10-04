@@ -1,0 +1,111 @@
+/* Center the calculator on the screen */
+body {
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Center heading above the calculator */
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Calculator form */
+#myform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Display screen styling */
+input[name="display"] {
+    width: 100%;
+    max-width: 320px;
+    height: 80px;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #1f80c9;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 15px;
+    justify-content: center;
+}
+
+input[type="button"] {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+input[type="button"]:active {
+    background-color: #444;
+}
+
+.operator {
+    background-color: #f39c12;
+}
+
+.operator:hover {
+    background-color: #e67e22;
+}
+
+.operator:active {
+    background-color: #d35400;
+}
+
+.clear {
+    background-color: #e74c3c;
+}
+
+.clear:hover {
+    background-color: #c0392b;
+}
+
+.clear:active {
+    background-color: #a93226;
+}
+
+input[value="="] {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+input[value="="]:hover {
+    background-color: #27ae60;
+}
+
+input[value="="]:active {
+    background-color: #229954;
+}
