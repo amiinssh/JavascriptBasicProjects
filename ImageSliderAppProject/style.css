@@ -1,0 +1,63 @@
+/* Basic body styling */
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the title */
+h1 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* Wrapper for image slider */
+.wrapper {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Hide the images except the active one */
+img.mySlides {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.active {
+    display: block;
+}
+
+a.btn1, a.btn2 {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+a.btn1 {
+    left: 10px;
+}
+
+a.btn2 {
+    right: 10px;
+}
+
+a.btn1:hover, a.btn2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
