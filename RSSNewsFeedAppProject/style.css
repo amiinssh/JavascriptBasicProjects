@@ -1,0 +1,87 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the RSS feed */
+#feedControl {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Feed item styling */
+.feed-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+.feed-item:last-child {
+    border-bottom: none;
+}
+
+/* Headings and links */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.feed-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+.feed-item h3 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
+}
+
+.feed-item h3 a:hover {
+    color: #1abc9c;
+}
+
+.feed-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    #feedControl {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .feed-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .feed-item p {
+        font-size: 0.9rem;
+    }
+}
