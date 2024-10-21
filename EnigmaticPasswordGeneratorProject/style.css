@@ -1,0 +1,100 @@
+/* Reset some basic elements for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #3b3054;
+    margin-bottom: 20px;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#password {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 16px;
+    border: 2px solid #e1e1e8;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+button {
+    background-color: #3b3054;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a3d73;
+}
+
+.options {
+    text-align: left;
+}
+
+.options label {
+    font-size: 14px;
+    color: #3b3054;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.options input[type="checkbox"],
+.options input[type="number"] {
+    margin-right: 10px;
+}
+
+#length {
+    padding: 0.5rem;
+    width: 80px;
+    font-size: 14px;
+    border: 2px solid #e1e1e8;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.options input[type="checkbox"] {
+    vertical-align: middle;
+    transform: scale(1.2);
+}
+
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+
