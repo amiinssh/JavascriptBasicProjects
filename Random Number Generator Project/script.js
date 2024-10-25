@@ -1,0 +1,9 @@
+const number = document.querySelector(".count-number");
+const btn = document.querySelector(".generate");
+
+const generateNumber = () => {
+  const randomNumber = Math.floor(Math.random() * 10 + 1);
+  number.innerHTML = randomNumber;
+};
+
+btn.addEventListener("click", generateNumber);
