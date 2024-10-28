@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.counter-div h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.count {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #555;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #e8eaf6;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hex {
+  color: #6c5ce7;
+  background-color: #dfe6e9;
+}
+
+hr {
+  border: 0.5px solid #ddd;
+  margin: 20px 0;
+}
+
+.buttons input[type="text"] {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.buttons input[type="text"]:focus {
+  border-color: #6c5ce7;
+  background-color: #f0f4ff;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+  .counter-div h1 {
+      font-size: 1.6rem;
+  }
+  .buttons input[type="text"] {
+      font-size: 1rem;
+  }
+}
